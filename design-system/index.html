@@ -58,8 +58,7 @@
       <h1 class="portfolio-headline"><span>AI 产品经理，</span><span>做泛娱乐内容。</span></h1>
       <p>7 年 C 端内容增长，2 年 AI 应用落地。</p>
     </section>
-    <div class="portfolio-project-heading" id="projects"><h2>项目</h2><span>3 类 · 5 个</span></div>
-    <section class="project-group">
+    <section class="project-group" id="projects">
       <header class="category-header"><div><h2>短剧类</h2><p>从投放决策到视频生产，短剧链路上的 AI 应用。</p></div><span>2 个</span></header>
       <article class="project-card project-card--featured">
         <div class="project-head"><div class="project-icon" style="--pc:#5B647A" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg></div><div class="project-titles"><p class="project-kicker">代表项目</p><h3 class="project-title"><a href="#dramapilot" data-open="dramapilot">DramaPilot</a></h3><p class="project-subtitle">短剧出海投放决策 Agent</p></div></div>
@@ -283,7 +282,7 @@
 
 (function(){
   var keys=['dramapilot', 'songdeng', 'housing-fund', 'mirofish', 'youtube'];
-  var views=document.querySelectorAll('[data-view]');
+  var views=document.querySelectorAll('body [data-view]');
   var lastScroll=0;
   function show(k){
     var isDetail=keys.indexOf(k)>-1;

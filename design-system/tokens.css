@@ -72,6 +72,11 @@
   --icon-featured: 96px;
   --icon-mobile: 48px;
   --icon-featured-mobile: 56px;
+  --icon-row: 48px;
+  --icon-row-featured: 56px;
+  --icon-row-mobile: 40px;
+  --icon-row-featured-mobile: 48px;
+  --control-height-fine: 24px;
   --project-grid-gap: var(--space-lg);
   --project-card-padding: var(--space-md);
   --project-cover-ratio: 16 / 9;
