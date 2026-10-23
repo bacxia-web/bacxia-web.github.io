@@ -1,0 +1,115 @@
+/* Hallmark · macrostructure: Component Playground + Editorial Directory · Mossbell / 墨贝 · v1.2
+ * theme: custom · paper: oklch(1 0 0) · accent: oklch(0.5545102 0.2266388 27.98367)
+ * typography: local system sans only · signature: A, ink / red / surface, 3:1:4
+ * nav: N3 Side-rail · footer: Ft2 Inline-rule · enrichment: none · context: user-provided
+ * pre-emit critique: P5 H5 E4 S5 R5 V4
+ * Exact source palette retained at user's request, including pure paper white.
+ */
+:root {
+  color-scheme: light;
+  --color-paper: oklch(1 0 0); /* #FFFFFF */
+  --color-surface: oklch(0.9626253 0.0051459 67.76315); /* #F5F2EF */
+  --color-ink: oklch(0.1999555 0.0153648 47.93274); /* #1C1410 */
+  --color-accent: oklch(0.5545102 0.2266388 27.98367); /* #D8000F */
+  --color-muted: oklch(0.5167788 0.0147785 56.0399); /* #6F6660 */
+  --color-rule: oklch(0.8799772 0.0112605 63.34273); /* #DDD6D0 */
+  --color-border: oklch(0.6437725 0.0186969 61.80158); /* #968B82 */
+  --color-accent-hover: oklch(0.4919797 0.2009269 27.72976); /* #B8000D */
+  --color-accent-soft: oklch(0.9666694 0.0163169 22.07982); /* #FFF0EF */
+  --color-disabled: oklch(0.9186226 0.0076823 61.44612); /* #E8E3DF */
+  --color-accent-ink: var(--color-paper);
+  --color-focus: var(--color-ink);
+  --color-error: var(--color-ink);
+  --project-accent: var(--color-ink); /* Per project; icon and thumbnail only. */
+  --project-cover-ink: var(--color-paper); /* Neutral text, never project accent. */
+  --font-display: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: var(--font-display);
+  --font-code: var(--font-display);
+  --text-caption: 0.875rem;
+  --text-body: 1rem;
+  --text-lead: 1.25rem;
+  --text-h3: 1.75rem;
+  --text-h2: 2.5rem;
+  --text-h1: 3.5rem;
+  --text-cover: 4rem;
+  --text-display: var(--text-cover);
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --leading-display: 1.2;
+  --leading-lead: 1.6;
+  --leading-heading: 1.3;
+  --leading-body: 1.75;
+  --leading-caption: 1.5;
+  --tracking-display: -0.025em;
+  --space-3xs: 4px;
+  --space-2xs: 8px;
+  --space-xs: 12px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+  --space-3xl: 96px;
+  --radius-card: 4px;
+  --radius-control: 4px;
+  --radius-tag: var(--radius-card);
+  --radius-icon: 16px;
+  --radius-icon-mobile: 12px;
+  --rule-thin: 1px;
+  --rule-strong: 2px;
+  --rule-key: 3px;
+  --control-height: 44px;
+  --layout-max: 1120px;
+  --layout-reading: 40rem;
+  --layout-detail: 880px;
+  --layout-project-copy: 32rem;
+  --layout-list: 44rem;
+  --project-side-width: 280px;
+  --evidence-min-width: 200px;
+  --icon-default: 72px;
+  --icon-featured: 96px;
+  --icon-mobile: 48px;
+  --icon-featured-mobile: 56px;
+  --project-grid-gap: var(--space-lg);
+  --project-card-padding: var(--space-md);
+  --project-cover-ratio: 16 / 9;
+  --project-featured-ratio: 16 / 10;
+  --project-title-size: var(--text-h3);
+  --signature-height: 4px;
+  --signature-columns: 3fr 1fr 4fr;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-press: 100ms;
+  --dur-fast: 160ms;
+  --dur-base: 240ms;
+}
+
+/* v1.3 · 产品界面层（Demo 与数据工具页）。与展示层共用上面的配色与字体。 */
+:root {
+  --ui-bg: #FAF8F6;
+  --ui-line: #E9E4DF;
+  --ui-text-page: 1.5rem;     /* 24 */
+  --ui-text-card: 1.0625rem;  /* 17 */
+  --ui-text-body: 0.9375rem;  /* 15 */
+  --ui-text-ui: 0.875rem;     /* 14 */
+  --ui-text-meta: 0.8125rem;  /* 13，仅短元信息 */
+  --ui-text-num: 1.25rem;     /* 20 */
+  --ui-radius-card: 10px;
+  --ui-radius-item: 8px;
+  --ui-radius-pill: 999px;
+  --ui-control: 36px;
+  --ui-control-touch: 44px;
+  --ui-side-width: 232px;
+  --ui-intel-width: 360px;
+  --ui-gap: 20px;
+  --chart-ink: #1C1410;
+  --chart-green: #55695F;
+  --chart-orange: #D8784A;
+  --chart-blue: #5B647A;
+  --chart-mauve: #716379;
+  --chart-mute: #C4BBB4;
+  --chart-alarm: var(--color-accent);
+}

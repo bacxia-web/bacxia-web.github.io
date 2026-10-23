@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mossbell／墨贝，AI 产品经理，出海内容方向。作品集列表、项目卡片与个人设计系统。">
+  <title>Mossbell／墨贝，作品集设计系统</title>
+  <script>
+    if (new URLSearchParams(location.search).get('view') === 'portfolio') {
+      document.documentElement.dataset.view = 'portfolio';
+      document.title = 'Mossbell／墨贝，项目作品集';
+    }
+  </script>
+  <link rel="stylesheet" href="components.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <aside class="rail">
+    <a href="#main" class="rail-brand">Mossbell／墨贝<span>作品集设计系统</span></a>
+    <nav aria-label="设计系统目录">
+      <a href="#portfolio" aria-current="location">作品集列表页</a>
+      <a href="#colors">外壳与项目色</a>
+      <a href="#typography">中英文字体</a>
+      <a href="#layout">间距与布局</a>
+      <a href="#components">基础组件</a>
+      <a href="#applications">作品集示例</a>
+      <a href="#guidelines">面试展示规范</a>
+    </nav>
+    <div class="rail-bottom">
+      <p class="caption muted">为严肃内容留出空间，<br>让关键判断被看见。</p>
+      <a class="button button--secondary" href="design.md">阅读完整规范</a>
+    </div>
+  </aside>
+  <main class="page" id="main">
+    <div class="page-inner">
+      <div class="doc-masthead"><div class="mast"><span>Mossbell／墨贝</span><span>作品集设计系统，v1.2</span></div><div class="brand-rule" aria-hidden="true"><span></span><span></span><span></span></div></div>
+      <header class="hero">
+        <div class="hero-grid">
+          <h1>作品集<br>设计系统</h1>
+          <div class="hero-note">
+            <p>中性的作品集外壳，<br>容纳各有风格的项目。</p>
+            <p class="caption muted">面向国内面试官与招聘方，优先展示项目价值、成果与可访问的作品入口。</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="section portfolio-example" id="portfolio" aria-labelledby="portfolio-example-title">
+        <header class="section-heading"><h2 id="portfolio-example-title">作品集列表页</h2><p>编辑式目录，一行一个项目，按短剧类、知识库类、舆情分析类分组。<a href="?view=portfolio">独立查看列表页 ↗</a></p></header>
+<div class="portfolio-shell">
+  <header class="portfolio-mast">
+    <a class="portfolio-wordmark" href="#projects" data-back>Mossbell／墨贝</a>
+    <span class="contact"><span class="mailtxt">bacxia@qq.com</span><a class="project-link" href="https://github.com/bacxia-web" target="_blank" rel="noopener noreferrer">GitHub ↗</a></span>
+  </header>
+  <div class="brand-rule"><span></span><span></span><span></span></div>
+
+  <div id="view-home" data-view="home">
+    <section class="portfolio-intro">
+      <h1 class="portfolio-headline">AI 产品经理，<br>做泛娱乐内容。</h1>
+      <p>7 年 C 端内容增长，2 年 AI 应用落地。</p>
+    </section>
+    <div class="portfolio-project-heading" id="projects"><h2>项目</h2><span>3 类 · 5 个</span></div>
+    <section class="project-group">
+      <header class="category-header"><div><h2>短剧类</h2><p>从投放决策到视频生产，短剧链路上的 AI 应用。</p></div><span>2 个</span></header>
+      <article class="project-card project-card--featured">
+        <div class="project-head"><div class="project-icon" style="--pc:#5B647A" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg></div><div class="project-titles"><p class="project-kicker">代表项目</p><h3 class="project-title"><a href="#dramapilot" data-open="dramapilot">DramaPilot</a></h3><p class="project-subtitle">短剧出海投放决策 Agent</p></div></div>
+        <div class="project-body"><p class="project-value">判断投哪个市场、主打哪个钩子、素材尺度开到几档。</p><p class="project-tags">2026.06 – 至今 · 短剧出海 · Agent</p></div>
+        <div class="project-side"><div class="project-actions"><a class="project-link" href="https://bacxia-web.github.io/dramapilot/" target="_blank" rel="noopener noreferrer">Demo ↗</a><a class="project-link" href="https://github.com/bacxia-web/dramapilot" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="project-link" href="#dramapilot" data-open="dramapilot">详情 →</a></div></div>
+      </article>
+      <article class="project-card">
+        <div class="project-head"><div class="project-icon" style="--pc:#716379" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"/><path d="M8.5 4h7"/><path d="M8.5 4.5C6 6 5 8.5 5 11.5s1 5.5 3.5 7h7c2.5-1.5 3.5-4 3.5-7s-1-5.5-3.5-7"/><path d="M12 4.5c-1.6 1.6-2.2 4-2.2 7s.6 5.4 2.2 7c1.6-1.6 2.2-4 2.2-7s-.6-5.4-2.2-7z"/><path d="M9.5 18.5v1.5h5v-1.5"/><path d="M12 20v2"/></svg></div><div class="project-titles"><h3 class="project-title"><a href="#songdeng" data-open="songdeng">《送灯》AI 动画短片</a></h3></div></div>
+        <div class="project-body"><p class="project-value">从剧本做到成片，弄懂 AIGC 视频怎么生产。</p><p class="project-tags">2026.10 · AIGC 视频</p></div>
+        <div class="project-side"><div class="project-metric"><b>20 元</b><span>30 秒成片总花费</span></div><div class="project-actions"><a class="project-link" href="https://claude.ai/artifact/AKAkkeycY9Vz9piFeL1i35" target="_blank" rel="noopener noreferrer">完整复盘 ↗</a><a class="project-link" href="#songdeng" data-open="songdeng">详情 →</a></div></div>
+      </article>
+    </section>
+
+    <section class="project-group">
+      <header class="category-header"><div><h2>知识库类</h2><p>基于政策文档的 RAG 问答，重点是答得准、查得到出处。</p></div><span>1 个</span></header>
+      <article class="project-card">
+        <div class="project-head"><div class="project-icon" style="--pc:#4F6475" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 11L12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/><path d="M15.5 6.2V4.5h2v3.3"/></svg></div><div class="project-titles"><h3 class="project-title"><a href="#housing-fund" data-open="housing-fund">公积金政策问答</a></h3><p class="project-subtitle">市民模式 / 坐席模式</p></div></div>
+        <div class="project-body"><p class="project-value">市民提问用生效条款作答，坐席查询提醒失效说法。</p><p class="project-tags">2026.10 · RAG</p></div>
+        <div class="project-side"><div class="project-metric"><b>73% → 100%</b><span>计算题正确率</span></div><div class="project-actions"><a class="project-link" href="https://udify.app/chat/VSRTF28HFS4vVqmw" target="_blank" rel="noopener noreferrer">市民模式 Demo ↗</a><a class="project-link" href="https://udify.app/chat/d6lBpDCqiYpZsMNn" target="_blank" rel="noopener noreferrer">坐席模式 Demo ↗</a><a class="project-link" href="#housing-fund" data-open="housing-fund">详情 →</a></div></div>
+      </article>
+    </section>
+
+    <section class="project-group">
+      <header class="category-header"><div><h2>舆情分析类</h2><p>从社交内容里识别实体、聚合议题。</p></div><span>2 个</span></header>
+      <article class="project-card" data-accent-family="warm">
+        <div class="project-head"><div class="project-icon" style="--pc:#D8784A" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5.5" r="2"/><circle cx="18" cy="5.5" r="2"/><circle cx="12" cy="19" r="2"/><path d="M6 7.5c0 4 6 4.5 6 9.5"/><path d="M18 7.5c0 4-6 4.5-6 9.5"/></svg></div><div class="project-titles"><h3 class="project-title"><a href="#mirofish" data-open="mirofish">MiroFish 消歧 Agent</a></h3></div></div>
+        <div class="project-body"><p class="project-value">把同一个人、同一件事的重复实体合并。</p><p class="project-tags">2025.10 – 至今 · Agent</p></div>
+        <div class="project-side"><div class="project-metric"><b>95%</b><span>重复实体合并正确率</span></div><div class="project-actions"><a class="project-link" href="https://bit.ly/mirofish-demo" target="_blank" rel="noopener noreferrer">Demo ↗</a><a class="project-link" href="#mirofish" data-open="mirofish">详情 →</a></div></div>
+      </article>
+      <article class="project-card">
+        <div class="project-head"><div class="project-icon" style="--pc:#55695F" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h11a1.5 1.5 0 0 1 1.5 1.5v6A1.5 1.5 0 0 1 15 14.5H9l-3.5 3v-3H4A1.5 1.5 0 0 1 2.5 13V7A1.5 1.5 0 0 1 4 5.5z"/><path d="M19 9h1A1.5 1.5 0 0 1 21.5 10.5v6A1.5 1.5 0 0 1 20 18h-1v2.5L16 18h-4.5"/><path d="M6 9h7M6 11.5h4.5"/></svg></div><div class="project-titles"><h3 class="project-title"><a href="#youtube" data-open="youtube">YouTube 评论话题分析</a></h3><p class="project-subtitle">Agent Workflow</p></div></div>
+        <div class="project-body"><p class="project-value">采集评论并自动聚合议题，了解观众在讨论什么。</p><p class="project-tags">Workflow</p></div>
+        <div class="project-side"><div class="project-actions"><a class="project-link" href="https://bit.ly/ytb-insight" target="_blank" rel="noopener noreferrer">Demo ↗</a><a class="project-link" href="#youtube" data-open="youtube">详情 →</a></div></div>
+      </article>
+    </section>
+
+  </div>
+
+  <article class="detail" id="view-dramapilot" data-view="dramapilot" hidden>
+    <a class="project-link" href="#projects" data-back>← 全部项目</a>
+    <header class="dhead"><div class="project-icon project-icon--large" style="--pc:#5B647A" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></svg></div><div class="project-titles"><h1>DramaPilot · 短剧出海投放决策 Agent</h1><p class="project-tags">2026.06 – 至今 · 短剧出海 · Agent</p></div></header>
+    <p class="dsum">给一部国内短剧，Agent 盘点它的钩子，判断投哪个市场、主打哪个钩子、素材尺度开到几档，采纳后一键生成本地化素材并派发渲染。</p>
+    <div class="project-actions dlinks"><a class="button" href="https://bacxia-web.github.io/dramapilot/" target="_blank" rel="noopener noreferrer">Demo ↗</a><a class="button button--secondary" href="https://github.com/bacxia-web/dramapilot" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+    <section class="dsec"><h2>核心逻辑</h2><div class="mode"><div class="flow-steps"><div class="flow-step"><strong>ingest</strong><span>读懂短剧</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>agent</strong><span>逐市场决策</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>produce</strong><span>生成本地化素材</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>dispatch</strong><span>派发 KrillinAI 渲染</span></div></div></div></section><section class="dsec"><h2>关键做法与取舍</h2><div class="callout callout--key"><strong>切决策，不卷生成</strong><p>渲染交给开源 KrillinAI，自己只做决策层。</p></div><div class="mode"><ul class="note-list"><li>4 段全链路打通。</li><li>4 × 5 级：爽 / 恨 / 欲 / 贪四类情绪钩子，按 1–5 级打强度。</li><li>每个市场出 2 版素材：激进冲量版和保守保户版。</li><li>钩子强度 × 平台合规双维评估：合规风险超过 3 级的钩子在该市场禁用，换钩子再投，不直接否掉市场。</li><li>从业者访谈后改方向：投手要的是把尺度推到平台红线，v2 把「敏感点提示」改成分市场的钩子资产；AI-as-Judge 自检乐观偏差和红线越界，并估算 ROAS 与成本。</li></ul></div></section>
+  </article>
+  <article class="detail" id="view-songdeng" data-view="songdeng" hidden>
+    <a class="project-link" href="#projects" data-back>← 全部项目</a>
+    <header class="dhead"><div class="project-icon project-icon--large" style="--pc:#716379" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"/><path d="M8.5 4h7"/><path d="M8.5 4.5C6 6 5 8.5 5 11.5s1 5.5 3.5 7h7c2.5-1.5 3.5-4 3.5-7s-1-5.5-3.5-7"/><path d="M12 4.5c-1.6 1.6-2.2 4-2.2 7s.6 5.4 2.2 7c1.6-1.6 2.2-4 2.2-7s-.6-5.4-2.2-7z"/><path d="M9.5 18.5v1.5h5v-1.5"/><path d="M12 20v2"/></svg></div><div class="project-titles"><h1>《送灯》AI 动画短片全流程实操</h1><p class="project-tags">2026.10 · AIGC 视频</p></div></header>
+    <p class="dsum">为了弄懂 AIGC 视频怎么生产，从剧本做到成片：30 秒、4 个镜头、原创角色。</p>
+    <div class="project-actions dlinks"><a class="button" href="https://claude.ai/artifact/AKAkkeycY9Vz9piFeL1i35" target="_blank" rel="noopener noreferrer">完整复盘 ↗</a></div>
+    <section class="dsec"><h2>核心逻辑</h2><div class="mode"><div class="flow-steps"><div class="flow-step"><strong>剧本与分镜</strong></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>角色与比例设定图</strong></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>首帧图</strong></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>图生视频</strong></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>剪辑配音</strong></div></div></div></section><section class="dsec"><h2>亮点数据</h2><div class="evidence"><div class="evidence-item"><b class="evidence-value">30 秒</b><p>成片，4 个镜头、原创角色</p></div><div class="evidence-item"><b class="evidence-value">20 元</b><p>总花费，主要花在视频的反复抽卡上</p></div></div></section><section class="dsec"><h2>关键做法与取舍</h2><div class="callout callout--key"><strong>先定完所有首帧，再批量生成视频</strong><p>改图便宜，改视频贵。</p></div><div class="mode"><ul class="note-list"><li>次要角色也要提前做设定图：三角色同框的镜头抽了 4 次才成，原因是没定身高比例、背景道具没做设定。</li></ul></div></section>
+  </article>
+  <article class="detail" id="view-housing-fund" data-view="housing-fund" hidden>
+    <a class="project-link" href="#projects" data-back>← 全部项目</a>
+    <header class="dhead"><div class="project-icon project-icon--large" style="--pc:#4F6475" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 11L12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5h4v5"/><path d="M15.5 6.2V4.5h2v3.3"/></svg></div><div class="project-titles"><h1>公积金政策问答</h1><p class="project-tags">2026.10 · RAG</p></div></header>
+    <p class="dsum">同一个知识库、两种用法：市民模式过滤失效条款，坐席模式把它找出来标红。</p>
+    <div class="project-actions dlinks"><a class="button" href="https://udify.app/chat/VSRTF28HFS4vVqmw" target="_blank" rel="noopener noreferrer">市民模式 Demo ↗</a><a class="button button--secondary" href="https://udify.app/chat/d6lBpDCqiYpZsMNn" target="_blank" rel="noopener noreferrer">坐席模式 Demo ↗</a></div>
+    <section class="dsec"><h2>核心逻辑</h2><div class="mode"><h3>市民模式</h3><p class="mode-sum">基于 Dify 搭建的北京住房公积金政策问答，市民直接提问，只用生效条款作答、注明出处，缺信息先追问，答不了转人工。</p><div class="flow-steps"><div class="flow-step"><strong>问题分类</strong><span>政策咨询 / 分中心缴存 / 个人查询 / 超出范围 / 违规套取</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>按元数据检索</strong><span>只取生效、且非国管体系的条款</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>代码计算额度</strong><span>先提取参数</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>大模型按依据作答</strong><span>标注来源</span></div></div></div><div class="mode"><h3>坐席模式</h3><p class="mode-sum">给 12329 热线坐席用的辅助助手，输入市民诉求，输出参考答案、原文出处、推荐话术，并提醒哪些说法已失效。</p><div class="flow-steps"><div class="flow-step"><strong>坐席录入诉求</strong></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>检索</strong><span>不过滤失效条款，故意找出旧规定</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>代码计算额度</strong></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>按固定五段输出</strong><span>诉求 / 参考答案 / 推荐话术 / 需追问 / 已失效条款提醒</span></div></div></div></section><section class="dsec"><h2>亮点数据</h2><div class="evidence"><div class="evidence-item"><b class="evidence-value">73% → 100%</b><p>计算题正确率（5 道计算题 × 每题 3 次），把装修提取、贷款额度、租房提取的公式计算从大模型交给代码</p></div><div class="evidence-item"><b class="evidence-value">9/9</b><p>陷阱题实测全部通过（含过期条款、计算、体系分流、拒答、追问、坐席题）</p></div><div class="evidence-item"><b class="evidence-value">约 12 秒</b><p>平均响应时间，推理强度调低后，原来约 30 秒</p></div></div><p class="note">8 个官方来源整理成 46 条政策，其中 3 条已失效并标注替代关系。</p></section><section class="dsec"><h2>关键做法与取舍</h2><div class="callout callout--key"><strong>同一个知识库、两种用法</strong><p>市民模式把失效条款过滤掉，坐席模式把它找出来标红。</p></div><div class="mode"><h3>市民模式</h3><ul class="note-list"><li>每条政策带元数据：发布日期、生效 / 失效、适用体系（北京市 / 国管 / 全国）、来源类型（官方原文 / 媒体转述）。</li><li>实测发现：不开过滤时，已失效的「无发票每月 1500 元」条款在检索结果中排第 2；开启过滤后不再出现。</li><li>查个人数据、超出范围、违规套取三类问题走固定话术，不经过大模型。</li></ul></div><div class="mode"><h3>坐席模式</h3><ul class="note-list"><li>市民可能拿着旧说法来问（例如「以前每季度到账 4500 元」），坐席需要知道旧规定是什么、被哪条替代。</li><li>回答给坐席看，不直接给市民，中间有人把关。</li></ul></div></section><section class="dsec"><h2>踩过的坑</h2><ul class="note-list"><li>元数据手工填错（来源编号、日期）→ 结论：生产环境应由系统按字段自动生成标签。</li><li>免费向量额度用完导致检索全空 → 换向量模型后维度不匹配 → 重建知识库。</li><li>提速后模型先写结论再算，出现「先写 30 万再改口 25 万」→ 做对照实验，计算交给代码。</li><li>免费的 Flash 模型拥堵，实测比旗舰模型还慢 → 选模型看实测而不是看名字。</li></ul></section><p class="notice">个人作品演示，非官方服务，政策以北京住房公积金管理中心公布为准。</p>
+  </article>
+  <article class="detail" id="view-mirofish" data-view="mirofish" data-accent-family="warm" hidden>
+    <a class="project-link" href="#projects" data-back>← 全部项目</a>
+    <header class="dhead"><div class="project-icon project-icon--large" style="--pc:#D8784A" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5.5" r="2"/><circle cx="18" cy="5.5" r="2"/><circle cx="12" cy="19" r="2"/><path d="M6 7.5c0 4 6 4.5 6 9.5"/><path d="M18 7.5c0 4-6 4.5-6 9.5"/></svg></div><div class="project-titles"><h1>MiroFish 消歧 Agent</h1><p class="project-tags">2025.10 – 至今 · Agent</p></div></header>
+    <p class="dsum">社交舆论模拟系统里的实体消歧模块，把同一个人、同一件事的重复实体合并。</p>
+    <div class="project-actions dlinks"><a class="button" href="https://bit.ly/mirofish-demo" target="_blank" rel="noopener noreferrer">Demo ↗</a></div>
+    <section class="dsec"><h2>核心逻辑</h2><div class="mode"><div class="flow-steps"><div class="flow-step"><strong>消歧</strong></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>决策</strong></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>执行</strong></div></div></div><p class="note">关键节点留人工确认（human-in-the-loop）。</p></section><section class="dsec"><h2>亮点数据</h2><div class="evidence"><div class="evidence-item"><b class="evidence-value">95%</b><p>重复实体合并正确率</p></div><div class="evidence-item"><b class="evidence-value">−31%</b><p>Token 用量</p></div><div class="evidence-item"><b class="evidence-value">−46%</b><p>调用费用</p></div></div></section><section class="dsec"><h2>关键做法与取舍</h2><div class="callout callout--key"><strong>先建评估再迭代</strong><p>开发前先定正确率口径和测试集。</p></div><div class="mode"><ul class="note-list"><li>分环节核算 ROI，从三处降本：上下文（长文本先摘要、只传核心项）、步骤（裁掉不必要环节）、调度（批量并发、公共缓存、动态提前跳轮）。</li></ul></div></section>
+  </article>
+  <article class="detail" id="view-youtube" data-view="youtube" hidden>
+    <a class="project-link" href="#projects" data-back>← 全部项目</a>
+    <header class="dhead"><div class="project-icon project-icon--large" style="--pc:#55695F" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5h11a1.5 1.5 0 0 1 1.5 1.5v6A1.5 1.5 0 0 1 15 14.5H9l-3.5 3v-3H4A1.5 1.5 0 0 1 2.5 13V7A1.5 1.5 0 0 1 4 5.5z"/><path d="M19 9h1A1.5 1.5 0 0 1 21.5 10.5v6A1.5 1.5 0 0 1 20 18h-1v2.5L16 18h-4.5"/><path d="M6 9h7M6 11.5h4.5"/></svg></div><div class="project-titles"><h1>YouTube 评论话题分析</h1><p class="project-tags">Workflow</p></div></header>
+    <p class="dsum">采集一个视频下的评论，自动聚合成议题，告诉你观众在讨论什么。</p>
+    <div class="project-actions dlinks"><a class="button" href="https://bit.ly/ytb-insight" target="_blank" rel="noopener noreferrer">Demo ↗</a></div>
+    <section class="dsec"><h2>核心逻辑</h2><div class="mode"><div class="flow-steps"><div class="flow-step"><strong>调度层</strong></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>推理层</strong><span>本地 Qwen</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>工具层</strong><span>YouTube Data API</span></div></div></div></section><section class="dsec"><h2>关键做法与取舍</h2><div class="callout callout--key"><strong>换场景只换工具层</strong><p>调度、推理、工具三层分开，换一个场景只需替换工具层。</p></div><div class="mode"><ul class="note-list"><li>2 个已验证场景：播客总结、评论议题聚合。</li><li>0 元成本：推理跑在本地 Qwen，采集用官方免费 API。</li><li>失败归因机制：每次失败都能定位是调度、推理还是工具出的问题。</li><li>小红书评论采集被风控卡住后，转到有官方 API 的 YouTube。</li></ul></div></section>
+  </article>
+
+  <footer class="portfolio-footer"><span>Mossbell／墨贝</span><span class="mail">bacxia@qq.com</span><span>AI 产品经理，泛娱乐内容方向</span><span>持续更新中 · 2026 年 10 月</span></footer>
+</div>
+      </section>
+
+      <section class="section" id="colors" aria-labelledby="colors-title">
+        <header class="section-heading"><h2 id="colors-title">外壳与项目色</h2><p>外壳始终保持中性，项目色只进入图标和缩略图。点击色值即可复制。</p></header>
+        <div class="palette">
+          <article class="palette-item"><div class="swatch swatch--paper"></div><h3>纸白／Paper</h3><button class="copy-hex" data-copy="#FFFFFF" aria-label="复制纸白色值 #FFFFFF">#FFFFFF</button><p>页面主背景、留白区域</p></article>
+          <article class="palette-item"><div class="swatch swatch--ink"></div><h3>暖黑／Ink</h3><button class="copy-hex" data-copy="#1C1410" aria-label="复制暖黑色值 #1C1410">#1C1410</button><p>标题、正文、核心信息</p></article>
+          <article class="palette-item"><div class="swatch swatch--accent"></div><h3>消防车红／Red</h3><button class="copy-hex" data-copy="#D8000F" aria-label="复制消防车红色值 #D8000F">#D8000F</button><p>交互状态、每页一处关键判断</p></article>
+          <article class="palette-item"><div class="swatch swatch--surface"></div><h3>暖灰白／Surface</h3><button class="copy-hex" data-copy="#F5F2EF" aria-label="复制暖灰白色值 #F5F2EF">#F5F2EF</button><p>分类头、成果底板、流程步骤</p></article>
+        </div>
+        <div class="usage-note">
+          <p><strong>品牌红的边界</strong><br>用于主按钮、链接，以及每页最多一处关键判断。单页约占 3%–5%，不用作错误色或普通标签色。</p>
+          <p><strong>可读性</strong><br>暖黑／纸白 18.15∶1；红色／纸白 5.35∶1。红色可用于短文字和按钮，长段正文仍用暖黑。</p>
+        </div>
+        <div class="project-policy body-copy"><p><strong>项目色的两个位置。</strong>每个项目单独设置 <code>--pc</code>，仅用于图标底色和缩略图。标题、标签、按钮和卡片底色始终使用外壳变量。</p><p><strong>红橙撞色处理。</strong>红色或橙色系项目设置 <code>data-accent-family="warm"</code>，项目图标线条改为暖黑。上方「MiroFish 消歧 Agent」演示了这条规则。</p><p><strong>签名元素 A。</strong>每页页眉统一使用 4 px 高、比例为 3∶1∶4 的暖黑—红—暖灰分段横线。它是固定的品牌签名，不随项目色变化；不再叠加超大号项目序号。</p></div>
+      </section>
+
+      <section class="section" id="typography" aria-labelledby="type-title">
+        <header class="section-heading"><h2 id="type-title">中英文字体</h2><p>全程使用端正的无衬线字形。用字号和字重区分层级，不靠艺术字制造存在感。</p></header>
+        <div class="type-specimen">
+          <p class="type-cn">Mossbell／墨贝，AI 产品经理。</p>
+          <p class="type-en" lang="en">Portfolio and project reviews</p>
+          <p class="type-sample">围绕问题、关键决策与结果组织项目。明确说明你负责什么、为什么选择这个方案，以及有哪些证据支持结论。</p>
+          <p class="type-sample tnum">Aa Bb Cc　0123456789</p>
+        </div>
+        <div class="font-caption caption muted"><span>中文：苹方 → 微软雅黑 → 本地 Noto Sans SC</span><span>英文与数字：本地字体回退</span><span>标题 700，正文 400，强调 600</span></div>
+        <table class="spec-table">
+          <caption class="print-note">屏幕版字号体系，单位为 CSS 像素</caption>
+          <thead><tr><th scope="col">使用位置</th><th scope="col">字号／行高</th><th scope="col">字重</th><th scope="col" class="desktop-only">说明</th></tr></thead>
+          <tbody>
+            <tr><td>封面标题</td><td>64 / 1.2</td><td>700</td><td class="desktop-only">短标题，最多两行；手机降到 40</td></tr>
+            <tr><td>页面主标题</td><td>56 / 1.2</td><td>700</td><td class="desktop-only">每页一个，避免与数据争抢注意力</td></tr>
+            <tr><td>章节标题</td><td>40 / 1.3</td><td>700</td><td class="desktop-only">新章节、项目关键论点</td></tr>
+            <tr><td>内容标题</td><td>28 / 1.3</td><td>600–700</td><td class="desktop-only">卡片、模块、页内小节</td></tr>
+            <tr><td>引导文字</td><td>20 / 1.6</td><td>400</td><td class="desktop-only">一句摘要与重点说明</td></tr>
+            <tr><td>正文</td><td>16 / 1.75</td><td>400</td><td class="desktop-only">中文每行约 24–36 字</td></tr>
+            <tr><td>图注与标签</td><td>14 / 1.5</td><td>400–500</td><td class="desktop-only">来源、时间、样本口径</td></tr>
+          </tbody>
+        </table>
+        <p class="caption muted" style="margin-top:var(--space-md)">字体全部从本机读取，不请求 Google Fonts 或其他在线字体，不发生远程字体替换造成的首屏跳闪。数字启用等宽数字特性，示例只展示字形。</p>
+      </section>
+
+      <section class="section" id="layout" aria-labelledby="layout-title">
+        <header class="section-heading"><h2 id="layout-title">间距与布局</h2><p>以 4 px 为基础。先对齐，再考虑装饰；每页只设置一个最重要的阅读入口。</p></header>
+        <div class="spacing-scale" aria-label="间距阶梯，单位像素">
+          <div class="spacing-item"><span class="spacing-block space-4"></span><span>4</span></div>
+          <div class="spacing-item"><span class="spacing-block space-8"></span><span>8</span></div>
+          <div class="spacing-item"><span class="spacing-block space-12"></span><span>12</span></div>
+          <div class="spacing-item"><span class="spacing-block space-16"></span><span>16</span></div>
+          <div class="spacing-item"><span class="spacing-block space-24"></span><span>24</span></div>
+          <div class="spacing-item"><span class="spacing-block space-32"></span><span>32</span></div>
+          <div class="spacing-item"><span class="spacing-block space-48"></span><span>48</span></div>
+          <div class="spacing-item"><span class="spacing-block space-64"></span><span>64</span></div>
+          <div class="spacing-item"><span class="spacing-block space-96"></span><span>96 px</span></div>
+        </div>
+        <div class="layout-rules">
+          <article><h3>屏幕阅读</h3><p>宽屏使用 12 列参考网格，最大内容宽 1120 px，列间距 24 px。正文不超过 40 rem，避免一行过长。</p></article>
+          <article><h3>列表页重排</h3><p>编辑式目录，一行一个项目。桌面三列为 96 px 图标、说明、280 px 成果与入口，间距 32 px。小于 760 px 时图标与标题并排，其余内容满宽，页边距 24 px。</p></article>
+          <article><h3>组件与分组</h3><p>标签到内容 8 px；同组元素 16 px；组间 24–32 px；模块间 48–64 px；章节间 96 px。</p></article>
+          <article><h3>圆角与线条</h3><p>分类头、成果底板与流程步骤圆角 4 px；图标桌面 16 px、手机 12 px。分隔线 1 px，关键判断左线 3 px。不使用厚重阴影和大面积胶囊形。</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="components" aria-labelledby="components-title">
+        <header class="section-heading"><h2 id="components-title">基础组件</h2><p>面向作品集浏览和项目讲述，保留必要的操作、标签与证据模块。</p></header>
+        <div class="component-row"><a class="button" href="?view=portfolio">查看列表页</a><a class="button button--secondary" href="tokens.css" download>下载配色与字号</a><a class="button button--text" href="design.md">阅读设计规范 ↗</a></div>
+        <h3>操作状态</h3>
+        <div class="state-grid">
+          <div class="state-item"><p>默认</p><button class="button" data-demo="default">查看项目</button></div>
+          <div class="state-item"><p>悬停</p><button class="button is-hover" data-demo="hover">查看项目</button></div>
+          <div class="state-item"><p>键盘焦点</p><button class="button is-focus" data-demo="focus">查看项目</button></div>
+          <div class="state-item"><p>按下</p><button class="button is-active" data-demo="active">查看项目</button></div>
+          <div class="state-item"><p>不可用，待补充内容</p><button class="button" disabled>暂不可用</button></div>
+        </div>
+        <p class="interaction-status" id="interaction-status" role="status" aria-live="polite">以上为状态演示，点击按钮可查看反馈。</p>
+        <div class="notice--error"><span aria-hidden="true">!</span><p>报错样式示例：链接暂时无法打开，请稍后重试。使用暖黑与文字说明，不占用品牌红。</p></div>
+        <div class="tab-demo">
+          <div class="tabs" role="tablist" aria-label="项目内容示例">
+            <button id="overview-tab" role="tab" aria-selected="true" aria-controls="overview-panel" tabindex="0">项目概览</button>
+            <button id="process-tab" role="tab" aria-selected="false" aria-controls="process-panel" tabindex="-1">设计过程</button>
+            <button id="reflection-tab" role="tab" aria-selected="false" aria-controls="reflection-panel" tabindex="-1">结果与复盘</button>
+          </div>
+          <div class="tab-panel" id="overview-panel" role="tabpanel" aria-labelledby="overview-tab"><h3>先让读者知道项目是什么</h3><p>交代背景、用户、你的职责，以及这次项目要解决的主要问题。</p></div>
+          <div class="tab-panel" id="process-panel" role="tabpanel" aria-labelledby="process-tab" hidden><h3>说明选择与取舍</h3><p>围绕关键决策展示证据、备选方案和约束，避免按时间堆叠所有过程稿。</p></div>
+          <div class="tab-panel" id="reflection-panel" role="tabpanel" aria-labelledby="reflection-tab" hidden><h3>区分结果、观察和推测</h3><p>给出真实结果与数据口径；没有上线数据时，如实说明验证方式和后续计划。</p></div>
+        </div>
+        <h3 class="component-subhead">标签与结论</h3>
+        <div class="component-row"><p class="project-tags">项目类型 · 时间周期 · 标签</p></div>
+        <div class="callout callout--key"><strong>关键判断：外壳统一阅读体验，项目保留自己的视觉。</strong><p>每页最多一处红色判断标记。其他结论块使用暖黑短线，正文与证据保持暖黑。</p></div>
+        <h3 class="component-subhead">项目卡片与入口</h3><p class="body-copy">图标、名称、一句话、时间与标签、成果、入口组成目录行；标签用「·」分隔的辅助灰文字，不使用徽章或「我的角色」字段。上方五个项目沿用作品集现有内容与地址，外链带「↗」，站内详情带「→」。</p>
+        <h3 class="component-subhead">项目图标、分类头与成果数字</h3>
+        <p class="body-copy">目录示例展示 72 / 96 px 图标、暖灰白分类头与 28 px 成果数字；手机图标为 48 / 56 px、成果数字为 20 px，底板内同行排列。图标使用原有 24 × 24 线条图形、1.7 线宽，图形占方块 48%。</p>
+        <h3 class="component-subhead">流程步骤</h3>
+<div class="flow-steps"><div class="flow-step"><strong>ingest</strong><span>读懂短剧</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>agent</strong><span>逐市场决策</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>produce</strong><span>生成本地化素材</span></div><span class="flow-arrow" aria-hidden="true">→</span><div class="flow-step"><strong>dispatch</strong><span>派发 KrillinAI 渲染</span></div></div>
+        <p class="caption muted">步骤标题 16 px / 600，说明 14 px；手机纵向排列，辅助灰箭头旋转 90°。详情页证据数字统一 28 px，顶部暖灰细线，无底色、无圆角。</p>
+      </section>
+
+      <section class="section" id="applications" aria-labelledby="applications-title">
+        <header class="section-heading"><h2 id="applications-title">封面与复盘页</h2><p>列表页之后，复盘页延续同一页眉签名、结论块与证据块。以下缺失内容均标为「待补充」。</p></header>
+        <div class="application-stack">
+          <figure>
+            <div class="portfolio-sheet cover-sheet">
+              <div class="sheet-meta"><span>Mossbell／墨贝</span><span>个人作品集</span></div>
+              <div class="brand-rule" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="cover-title">AI 产品经理<span>出海内容方向</span></div>
+              <div class="cover-bottom"><div><p>项目与复盘</p></div><p>联系方式：待补充<br>更新日期：待补充</p></div>
+            </div>
+            <figcaption class="figure-caption">封面示例：中性标题配统一分段页眉，不叠加第二套签名元素。</figcaption>
+          </figure>
+          <figure>
+            <div class="portfolio-sheet case-sheet">
+              <div class="sheet-meta"><span>Mossbell／墨贝</span><span>项目复盘页示例</span></div>
+              <div class="brand-rule" aria-hidden="true"><span></span><span></span><span></span></div>
+              <h3>DramaPilot</h3>
+              <p class="case-description">短剧出海投放决策 Agent。项目背景、目标用户与约束：待补充。</p>
+              <dl class="project-meta"><div><dt>我的职责</dt><dd>待补充</dd></div><div><dt>项目周期</dt><dd>待补充</dd></div><div><dt>团队协作</dt><dd>待补充</dd></div></dl>
+              <div class="callout"><strong>关键决策：待补充。</strong><p>支持证据、方案取舍与约束：待补充。</p></div>
+              <div class="evidence">
+                <div class="evidence-item"><div class="evidence-value">待补充</div><p>结果指标</p><p class="evidence-note">真实数据、时间范围与口径。</p></div>
+                <div class="evidence-item"><div class="evidence-value">待补充</div><p>验证证据</p><p class="evidence-note">测试方法、样本与主要观察。</p></div>
+                <div class="evidence-item"><div class="evidence-value">待补充</div><p>个人贡献</p><p class="evidence-note">个人决策、产出与协作边界。</p></div>
+              </div>
+              <div class="media-placeholder"><p>方案图：待补充</p><p class="caption">说明、版本与证据来源：待补充</p></div>
+            </div>
+            <figcaption class="figure-caption">项目页示例：背景、职责、关键决策和结果分层；数据缺失时明确留空。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="guidelines" aria-labelledby="guidelines-title">
+        <header class="section-heading"><h2 id="guidelines-title">面试展示规范</h2><p>同一套配色可以用于网页、PDF 和演示文稿，但字号需要按观看场景调整。</p></header>
+        <ul class="note-list">
+          <li><strong>一页一个结论。</strong>标题优先表达判断，正文补充依据；每页最多一处红色重点。</li>
+          <li><strong>屏幕阅读与投屏分开排版。</strong>1920 × 1080 演示画布建议：标题 64–80 px、正文 28–32 px、图注 22–24 px、四周安全边距 96 px。</li>
+          <li><strong>字数多就拆页。</strong>不要通过压缩字距、缩小字号或铺满卡片来塞入更多内容。</li>
+          <li><strong>数据与状态各有角色。</strong>图表比较使用暖黑与灰阶，目标序列通过标签与线型区分；报错使用暖黑、叹号和文字说明，品牌红只服务交互与一处关键判断。</li>
+          <li><strong>中文保持完整字形。</strong>不用手写、圆体、倾斜艺术字，也不强行把汉字拉长、压扁或加粗描边。</li>
+          <li><strong>交付前检查字体。</strong>网页只使用本地系统字体；PDF 应嵌入允许嵌入的字体。正式面试前在实际设备上检查中文、数字和换行。</li>
+        </ul>
+      </section>
+      <footer class="foot-line"><p>Mossbell／墨贝，设计系统 v1.2</p><p>基础配色参考 <a href="https://github.com/zarazhangrui/beautiful-html-templates/tree/main/templates/bold-poster" target="_blank" rel="noopener noreferrer">Bold Poster</a>，字体与版式已重建。</p></footer>
+    </div>
+  </main>
+  <script>
+
+(function(){
+  var keys=['dramapilot', 'songdeng', 'housing-fund', 'mirofish', 'youtube'];
+  var views=document.querySelectorAll('[data-view]');
+  var lastScroll=0;
+  function show(k){
+    var isDetail=keys.indexOf(k)>-1;
+    if(isDetail&&!document.getElementById('view-home').hidden) lastScroll=window.scrollY;
+    views.forEach(function(v){ v.hidden = isDetail ? v.dataset.view!==k : v.dataset.view!=='home'; });
+    if(isDetail) window.scrollTo(0,0);
+    return isDetail;
+  }
+  function fromHash(){
+    var k=(location.hash||'').slice(1);
+    if(!show(k)&&k==='projects'){var el=document.getElementById('projects'); if(el) el.scrollIntoView();}
+  }
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest('a');
+    if(!a) return;
+    if(a.hasAttribute('data-open')){ev.preventDefault();var k=a.getAttribute('data-open');try{history.pushState(null,'','#'+k)}catch(e){}show(k);}
+    else if(a.hasAttribute('data-back')){ev.preventDefault();var wasDetail=document.getElementById('view-home').hidden;try{history.pushState(null,'','#projects')}catch(e){}show('home');window.scrollTo(0,wasDetail?lastScroll:0);}
+  });
+  window.addEventListener('popstate',fromHash);
+  window.addEventListener('hashchange',fromHash);
+  fromHash();
+})();
+
+    const statusLine = document.getElementById('interaction-status');
+    document.querySelectorAll('[data-demo]').forEach(button => {
+      button.addEventListener('click', () => {
+        statusLine.textContent = '已触发操作反馈。这是组件演示，实际项目可接入对应操作。';
+      });
+    });
+    document.querySelectorAll('[data-copy]').forEach(button => {
+      button.addEventListener('click', async () => {
+        const value = button.dataset.copy;
+        try {
+          if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(value);
+          else {
+            const field = document.createElement('textarea');
+            field.value = value;
+            field.style.position = 'fixed';
+            field.style.inset = '0 auto auto -9999px';
+            document.body.append(field); field.select();
+            const copied = document.execCommand('copy'); field.remove();
+            if (!copied) throw new Error('Copy unavailable');
+          }
+          button.textContent = '已复制 ✓';
+          button.setAttribute('aria-label', '已复制 ' + value);
+        } catch {
+          button.textContent = value;
+          button.setAttribute('aria-label', '复制不可用，色值为 ' + value);
+          statusLine.textContent = '！浏览器不支持直接复制，请手动复制色值：' + value;
+        }
+      });
+      button.addEventListener('blur', () => { button.textContent = button.dataset.copy; });
+      button.addEventListener('mouseleave', () => { button.textContent = button.dataset.copy; });
+    });
+    const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+    function activateTab(tab, focus) {
+      const scrollY = window.scrollY;
+      tabs.forEach(item => {
+        const active = item === tab;
+        item.setAttribute('aria-selected', String(active));
+        item.tabIndex = active ? 0 : -1;
+        document.getElementById(item.getAttribute('aria-controls')).hidden = !active;
+      });
+      if (focus) tab.focus({preventScroll:true});
+      window.scrollTo({top:scrollY,behavior:'instant'});
+    }
+    tabs.forEach((tab,index) => {
+      tab.addEventListener('click', () => activateTab(tab,false));
+      tab.addEventListener('keydown', event => {
+        let next = index;
+        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        else if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+        else if (event.key === 'Home') next = 0;
+        else if (event.key === 'End') next = tabs.length - 1;
+        else return;
+        event.preventDefault(); activateTab(tabs[next],true);
+      });
+    });
+    document.querySelectorAll('.project-actions').forEach(container => {
+      const entries = [
+        ['demoUrl', 'Demo'],
+        ['githubUrl', 'GitHub'],
+        ['detailsUrl', '详情']
+      ];
+      let shown = 0;
+      const missing = [];
+      entries.forEach(([key, label]) => {
+        if (!(key in container.dataset)) return;
+        const raw = container.dataset[key].trim();
+        let url;
+        try { url = new URL(raw, location.href); } catch { url = null; }
+        if (!raw || !url || !['http:', 'https:', 'file:'].includes(url.protocol)) { missing.push(label); return; }
+        const link = document.createElement('a');
+        link.className = 'project-link';
+        link.href = url.href;
+        link.textContent = label + ' ↗';
+        link.setAttribute('aria-label', container.closest('.project-card').querySelector('h3').textContent + '，' + label);
+        if (url.origin !== location.origin) { link.target = '_blank'; link.rel = 'noopener noreferrer'; }
+        container.append(link);
+        shown += 1;
+      });
+      const note = container.parentElement.querySelector('.project-link-note');
+      if (shown && note) {
+        note.hidden = missing.length === 0;
+        if (missing.length) note.textContent = missing.join('、') + ' 地址待补充。';
+      }
+    });
+    const links = Array.from(document.querySelectorAll('.rail nav a'));
+    const sections = Array.from(document.querySelectorAll('.page-inner > section[id]'));
+    function updateCurrentSection() {
+      const active = sections.filter(section => section.getBoundingClientRect().top <= innerHeight * 0.35).at(-1) || sections[0];
+      links.forEach(link => {
+        if (link.hash === '#' + active.id) link.setAttribute('aria-current','location');
+        else link.removeAttribute('aria-current');
+      });
+    }
+    addEventListener('scroll',updateCurrentSection,{passive:true});
+    addEventListener('resize',updateCurrentSection);
+    updateCurrentSection();
+  </script>
+</body>
+</html>
